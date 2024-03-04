@@ -1,0 +1,61 @@
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+.article {
+    width: 69.44%;
+    height: 250px;
+    border: 2px solid black;
+    display: flex;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.article img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+.article_details {
+    height: 200px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0px;
+    text-align: left;
+}
+
+.article p {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.article a {
+    text-decoration: none;
+    color: black;
+}
+
+.source_publish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

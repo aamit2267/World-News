@@ -1,0 +1,36 @@
+.navbar {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 71.3%;
+    align-items: center;
+}
+
+.options button {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Nunito Sans", sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.options button::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 300ms;
+}
+
+.options button:hover::after {
+    width: 100%;
+}

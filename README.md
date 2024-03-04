@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# World News (NBNW ASSIGNMENT)
+This React project integrates an external API to fetch and display real-time news headlines on a sample news website.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Features
+- Fetches news headlines from an external API.
+- Displays headlines in a user-friendly format.
+- Cache the responses to reduce the number of API calls.
+- Implement error handling for cases where the API request fails.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+1. Cloning the Repository:
+```
+git clone https://github.com/aamit2267/World-News.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+```
+cd World-News/
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Run the development server:
+(Make sure to set [API KEY](#api-configuration) first)
+```
+npm start
+```
 
-### `npm test`
+This will start the development server and open the application in your default browser at http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Configuration
 
-### `npm run build`
+1. Visit: https://newsapi.org/ and SignIn/SignUp
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Click `Get API`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Copy Generated API KEY
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. In [src/utils/api.js](src/utils/api.js):
 
-### `npm run eject`
+```
+const api = "YOUR_API_KEY_HERE";
+```
+Set your api key as string and you are all set.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Glimpse
+![Screenshot-1](src/assets/images/Screenshot-1.png)
+![Screenshot-2](src/assets/images/Screenshot-2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Disclaimer
+This project is intended for educational purposes only and is not intended for production use.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+This project was created by [Amit Agarwal](https://github.com/aamit2267).
